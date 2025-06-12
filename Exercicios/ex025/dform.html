@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de matrícula</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Ficha de Matrícula</legend>
+            
+            <p>
+                <label for="iun">Unidade:</label>
+                <input type="text" name="un" id="iun">
+            </p>
+            <p>
+                <label for="icur">Curso:</label>
+                <input type="text" name="cur" id="icur">
+            </p>
+            <p>
+                <label for="itur">Turma:</label>
+                <input type="text" name="tur" id="itur">
+                
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="icpf">CPF:</label>
+                <input type="number" name="cpf" id="icpf" placeholder="xxx.xxx.xxx-xx" pattern="^\d{3}-\d{3}-\d{3}-\d{2}$" required>
+                <label for="idn">Data de Nascimento</label>
+                <input type="date" name="dn" id="idn">
+            </p>
+            <p>
+                <label for="ec">Estado Civil:</label>
+                <input type="radio" name="ec" id="isol"><label for="isol">Solteiro(a)</label>
+                <input type="radio" name="ec" id="icas"><label for="icas">Casado(a)</label>
+                <input type="radio" name="ec" id="idiv"><label for="idiv">Divorsiado(a)</label>
+                <input type="radio" name="ec" id="iviu"><label for="iviu">Viuvo(a)</label>
+            </p>
+            <p>
+                <label for="sx">Sexo:</label>
+                <input type="radio" name="sx" id="isxm"><label for="isxm">Masculino</label>
+                <input type="radio" name="sx" id="isxf"><label for="isxf">Feminino</label>
+                <label for="def">| Deficiência:</label>
+                <input type="radio" name="def" id="is"><label for="is">Sim</label>
+                <input type="radio" name="def" id="in"><label for="in">Não</label>
+            </p>
+            <p>
+                <label for="iuf">UF de Nascimento:</label>
+                <input type="text" name="UF" id="iuf">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <p></p>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
