@@ -30,42 +30,139 @@
 
             <p>
                 <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" placeholder="Nome completo">
+                <input type="text" name="nome" id="inome" placeholder="Nome completo" required>
             </p>
             <p>
                 <label for="icpf">CPF:</label>
                 <input type="number" name="cpf" id="icpf" placeholder="xxx.xxx.xxx-xx" pattern="^\d{3}-\d{3}-\d{3}-\d{2}$" required>
                 <label for="idn">Data de Nascimento</label>
-                <input type="date" name="dn" id="idn">
+                <input type="date" name="dn" id="idn" required>
             </p>
             <p>
                 <label for="ec">Estado Civil:</label>
-                <input type="radio" name="ec" id="isol"><label for="isol">Solteiro(a)</label>
-                <input type="radio" name="ec" id="icas"><label for="icas">Casado(a)</label>
-                <input type="radio" name="ec" id="idiv"><label for="idiv">Divorsiado(a)</label>
-                <input type="radio" name="ec" id="iviu"><label for="iviu">Viuvo(a)</label>
+                <input type="radio" name="ec" id="isol" required><label for="isol">Solteiro(a)</label>
+                <input type="radio" name="ec" id="icas" required><label for="icas">Casado(a)</label>
+                <input type="radio" name="ec" id="idiv" required><label for="idiv">Divorsiado(a)</label>
+                <input type="radio" name="ec" id="iviu" required><label for="iviu">Viuvo(a)</label>
             </p>
             <p>
                 <label for="sx">Sexo:</label>
-                <input type="radio" name="sx" id="isxm"><label for="isxm">Masculino</label>
-                <input type="radio" name="sx" id="isxf"><label for="isxf">Feminino</label>
+                <input type="radio" name="sx" id="isxm" required>
+                <label for="isxm">Masculino</label>
+                <input type="radio" name="sx" id="isxf" required>
+                <label for="isxf">Feminino</label>
+
                 <label for="def">| Deficiência:</label>
-                <input type="radio" name="def" id="is"><label for="is">Sim</label>
-                <input type="radio" name="def" id="in"><label for="in">Não</label>
+                <input type="radio" name="def" id="is" required>
+                <label for="is">Sim</label>
+                <input type="radio" name="def" id="in" required>
+                <label for="in">Não</label>
             </p>
             <p>
-                <label for="iuf">UF de Nascimento:</label>
-                <input type="text" name="UF" id="iuf">
+                <label for="iufn">UF de Nascimento:</label>
+                <select name="UF" id="iufn" required>
+                    <option value="" select>--- Escolha ---</option>
+
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantis</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="telefone" id="itel" placeholder="(xx) xxxxx-xxxx" required>
+                <label for="iema">E-mail: </label>
+                <input type="email" name="email" id="iema" required>
             </p>
         </fieldset>
 
         <fieldset>
             <legend>Endereço</legend>
 
-            <p></p>
+            <p>
+                <label for="iend">Endereço: </label>
+                <input type="text" name="endereço" id="iend" required>
+            </p>
+
+            <p>
+                <label for="icom">Complemento: </label>
+                <input type="text" name="complemento" id="icom" required>
+            </p>
+
+            <p>
+                <label for="ibai">Bairro: </label>
+                <input type="text" name="bairro" id="ibai" required>
+            </p>
+
+            <p>
+                <label for="imun">Município: </label>
+                <input type="text" name="município" id="imun" required>
+
+                <label for="iuf">UF: </label>
+                <select name="UF" id="iuf" required>
+                    <option value="" select>--- Escolha ---</option>
+
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantis</option>
+                </select>
+
+                <label for="icep">CEP: </label>
+                <input type="number" name="CEP" id="icep" placeholder="xxxxx-xxx" required>
+            </p>
         </fieldset>
 
         <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
